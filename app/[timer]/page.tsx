@@ -7,7 +7,7 @@ import { FaTelegram } from "react-icons/fa6";
 import { SiInstagram } from "react-icons/si";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function TimerClockPage() {
   const [isActive, setIsActive] = useState(false);
@@ -29,7 +29,7 @@ export default function TimerClockPage() {
   }
 
   useEffect(() => {
-    let maininterval: any = undefined;
+    let maininterval = undefined;
     if (isActive) {
       maininterval = setInterval(() => {
         setSecondNumber((prevSecondNumber) => {
