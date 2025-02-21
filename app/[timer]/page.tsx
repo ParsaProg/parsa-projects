@@ -92,7 +92,7 @@ export default function TimerClockPage() {
             onClick={() => {
               startTimer();
             }}
-            className="w-[100%] sm:w-[auto] px-3 py-2 flex items-center justify-center gap-x-2 text-lg bg-white border-[1px] border-white transition-all duration-200 rounded-md hover:bg-transparent hover:text-white"
+            className="w-[100%] sm:w-[auto] px-3 py-2 flex items-center justify-center gap-x-2 text-lg bg-white border-[1px] border-white text-black transition-all duration-200 rounded-md hover:bg-transparent hover:text-white"
           >
             Start Working
             <IoPlayOutline size={20} />
@@ -101,7 +101,7 @@ export default function TimerClockPage() {
             onClick={() => {
               PauseTimer();
             }}
-            className="w-[100%] sm:w-[auto] px-3 py-2 flex items-center justify-center gap-x-2 text-lg bg-white border-[1px] border-white transition-all duration-200 rounded-md hover:bg-transparent hover:text-white"
+            className="w-[100%] sm:w-[auto] px-3 py-2 flex items-center justify-center gap-x-2 text-lg bg-white border-[1px] text-black border-white transition-all duration-200 rounded-md hover:bg-transparent hover:text-white"
           >
             Pause And Rest
             <CiPause1 size={20} />
@@ -118,7 +118,7 @@ export default function TimerClockPage() {
         </div>
         <div className="sm:mt-[120px] mt-[80px] flex items-center gap-x-[20px] text-white">
           <FaTelegram
-            onClick={() => window.open("https://t.me/ParsaShaabani", "_blank")}
+            onClick={() => window.open("https://t.me/Parsa_Shaabani", "_blank")}
             className="cursor-pointer"
             size={40}
           />
