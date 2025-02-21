@@ -36,10 +36,10 @@ export default function TimerClockPage() {
           const newSecondNumber = prevSecondNumber + 1;
           if (newSecondNumber === 60) {
             setMinuteNumber((prevMinuteNumber) => {
-              const newMinuteNumber = prevMinuteNumber + 0.5;
+              const newMinuteNumber = prevMinuteNumber + 1;
               if (newMinuteNumber === 60) {
                 setMinuteNumber(0);
-                setHourNumber((prevHourNumber) => prevHourNumber + 0.5);
+                setHourNumber((prevHourNumber) => prevHourNumber + 1);
               }
               return newMinuteNumber;
             });
